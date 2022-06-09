@@ -1,38 +1,3 @@
-body {
-    margin: 0 0;
-    padding: 0 0;
-}
-
-/* TITRE EN HAUT */
-#titre {
-    text-align: center;
-}
-/*
-#haut_gauche, #haut_droite, #bas_gauche, #bas_droite {
-    display: inline-block;
-}
-*/
-/* CHOIX DES PARCOURS et DES SEMESTRE */
-/*
-#haut_gauche {
-    background-color: antiquewhite;
-    width: 30%;
-}
-#haut_droite {
-    background-color: aquamarine;
-    width: 69%;
-}
-*/
-/* CHOIX du truc à affiché */
-/*
-#bas_gauche {
-    width: 30%;
-}
-#bas_droite {
-    width: 69%;
-    vertical-align: top;
-}
-*/
 /* FORMAT des BOUTONS */
 .selected {
     background-color: white;
