@@ -1,4 +1,4 @@
-/*global d3*/
+/*global d3,marked*/
 
 var a_afficher = function(d, p, s) {
     var affiche_semestre = (s == "tous") || (s == d.semestre),
@@ -58,14 +58,13 @@ var creation = function(but) {
                     else
                         return d.parcours == "EMS" ? "inline-block" : "none";
             })
-        .html(function(d) { return d.numero; })
+        .html(function(d) { return d.numero_long; })
         .on("click", function() {
             var d = d3.select(this).data()[0]
             d3.select("#choix_fiche").selectAll("button").classed("selected", false)
             d3.select(this).classed("selected", true)  
             // d3.select("#fiche").html("<h2>" + d.libelle + "</h2>" + "<pre>" + d.texte + "</pre>");
             d3.select("#fiche").html("<h2>" + d.libelle + "</h2>" + marked.parse(d.texte));
-            console.log(d.texte);
         });
     
 }

@@ -18,12 +18,18 @@ recherche_pages = function(pat, text) {
 }
 
 lignes_Semestre = recherche_pages("Semestre [1-6]", text_split_sans_bas)
+lignes_Chapitre = recherche_pages("Chapitre [0-9]", text_split_sans_bas)
 lignes_SAE = recherche_pages("[0-9\\.]{3}.*SAÉ [1-6]", text_split_sans_bas)
 lignes_RES = recherche_pages("[0-9\\.]{3}.*Ressource R[1-6]", text_split_sans_bas)
 lignes_PF = recherche_pages("[0-9\\.]{3}.*PORTFOLIO", text_split_sans_bas)
+lignes_Stage = recherche_pages("[0-9\\.]{3}.*STAGE", text_split_sans_bas)
 
-lignes = sort(c(lignes_Semestre, lignes_SAE, lignes_RES, lignes_PF, length(text_split_sans_bas)))
+lignes = sort(c(lignes_Semestre, lignes_Chapitre, lignes_SAE, lignes_RES, lignes_PF, lignes_Stage, length(text_split_sans_bas)))
 # text_split_sans_bas[lignes]
+
+remplace_tiret = function(texte) {
+  return (sub("– ", "- ", texte))
+}
 
 ajout_h3 = function(texte, pattern) {
   if (length(grep(pattern, texte))) {
@@ -34,7 +40,7 @@ ajout_h3 = function(texte, pattern) {
 
 traitement = function(texte) {
   for (i in 1:length(texte)) {
-    texte[i] = trimws(texte[i])
+    texte[i] = trimws(remplace_tiret(texte[i]))
     texte[i] = ajout_h3(texte[i], "Compétence[s]* ciblée[s]*")
     texte[i] = ajout_h3(texte[i], "Objectifs et problématique")
     texte[i] = ajout_h3(texte[i], "Apprentissage[s]* critique[s]*")
@@ -58,6 +64,7 @@ traitement_SAE = function(texte) {
   res$numero_seul = num_split[length(num_split)]
   res$libelle = trimws(split[2])
   res$texte = traitement(texte[2:length(texte)])
+  res$numero_long = paste0("SAE ", res$numero)
   return(res)
 }
 # traitement_SAE(but[[1]])
@@ -71,6 +78,7 @@ traitement_RES = function(texte) {
   res$numero_seul = num_split[length(num_split)]
   res$libelle = trimws(split[2])
   res$texte = traitement(texte[2:length(texte)])
+  res$numero_long = paste0("RES ", res$numero)
   return(res)
 }
 # traitement_RES(but[[8]])
@@ -83,20 +91,29 @@ traitement_PF = function(texte){
   return(res)
 }
 
+traitement_Stage = function(texte){
+  res = list(type = "STAGE")
+  split = strsplit(texte[1], ": ")[[1]]
+  res$libelle = trimws(split[2])
+  res$texte = traitement(texte[2:length(texte)])
+  return(res)
+}
+
 but = list()
 parcours = c("EMS", "VCOD")
 changement_parcours = FALSE
 for (i in 1:(length(lignes)-1)) {
   l = lignes[i]
+  if (l %in% lignes_Chapitre) { next; }
   if (l %in% lignes_Semestre) {
-    semestre = substring(text_split_sans_bas[l], length(text_split_sans_bas[l]), 1)
+    semestre = strsplit(text_split_sans_bas[l], "[ ]+")[[1]][3]
     if (length(grep("Semestre 3", text_split_sans_bas[l]))) {
-        if (!changement_parcours) {
-          parcours = "VCOD"
-          changement_parcours = TRUE
-        } else {
-          parcours = "EMS"
-        }
+      if (!changement_parcours) {
+        parcours = "VCOD"
+        changement_parcours = TRUE
+      } else {
+        parcours = "EMS"
+      }
     } 
   } else {
     t = text_split_sans_bas[lignes[i]:(lignes[i+1]-1)]
@@ -107,7 +124,13 @@ for (i in 1:(length(lignes)-1)) {
     if (l %in% lignes_PF) {
       t = traitement_PF(t)
       t$semestre = semestre
-      t$numero = paste0("PF", semestre)
+      t$numero_long = paste0("PF", semestre)
+    }
+    if (l %in% lignes_Stage) {
+      t = traitement_Stage(t)
+      t$semestre = semestre
+      t$numero_long = paste0("Stage ", semestre)
+      #print(semestre, t$libelle)
     }
     t$parcours = parcours
     but[[length(but) + 1]] = t
