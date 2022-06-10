@@ -124,11 +124,13 @@ for (i in 1:(length(lignes)-1)) {
     if (l %in% lignes_PF) {
       t = traitement_PF(t)
       t$semestre = semestre
+      t$numero = semestre
       t$numero_long = paste0("PF", semestre)
     }
     if (l %in% lignes_Stage) {
       t = traitement_Stage(t)
       t$semestre = semestre
+      t$numero = semestre
       t$numero_long = paste0("Stage ", semestre)
       #print(semestre, t$libelle)
     }
