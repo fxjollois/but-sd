@@ -16,11 +16,7 @@ d3.select("#choix_parcours").selectAll("button")
     .append("button")
     .attr("class", function(d) { 
         var q = new URLSearchParams(location.search);
-        if (q.has("parcours")) {
-            return q.get("parcours") == d ? "selected" : ""
-        } else {
-            return "EMS" == d ? "selected" : ""
-        }
+        return q.get("parcours") == d ? "selected" : ""
     })
     .html(function(d) { return d; })
     .on("click", function() { d3.select("#fiche").html(""); });
@@ -41,11 +37,7 @@ d3.select("#choix_semestre").selectAll("button")
     .append("button")
     .attr("class", function(d) {  
         var q = new URLSearchParams(location.search);
-        if (q.has("semestre")) {
-            return q.get("semestre") == d ? "selected" : "none"
-        } else {
-            return d == "tous" ? "selected" : "none"
-        }
+        return q.get("semestre") == d ? "selected" : "none"
     })
     .html(function(d) { return d; });
 
@@ -65,24 +57,29 @@ var creation = function(but) {
         })
         .style("display", function(d) {
             var q = new URLSearchParams(location.search), test_parcours = true, test_semestre = true;
-            if (q.has("parcours")) {
-                test_parcours = d.parcours.includes(q.get("parcours"));
-            }
-            if (q.has("semestre")) {
-                test_semestre = q.get("semestre") == "tous" ? true : q.get("semestre") == d.semestre;
-            }
+            test_parcours = d.parcours.includes(q.get("parcours"));
+            test_semestre = q.get("semestre") == "tous" ? true : q.get("semestre") == d.semestre;
             return test_parcours && test_semestre ? "inline-block" : "none";
             })
         .append("button")
+        .classed("selected", function(d) {
+            var q = new URLSearchParams(location.search);
+            return d.parcours.includes(q.get("parcours")) && q.get("semestre") == d.semestre && q.get("type") == d.type && q.get("numero") == d.numero;
+        })
         .html(function(d) { return d.numero_long; })
     
-    var params = new URLSearchParams(location.search);
-    if (params.get("type") != null && params.get("numero") != null) {
+    var q = new URLSearchParams(location.search);
+    if (q.get("type") != null && q.get("numero") != null) {
         var fiche = but.filter(function(d) { 
-            return d.type == params.get("type") && d.numero == params.get("numero")
+            return d.parcours.includes(q.get("parcours")) && q.get("semestre") == d.semestre && d.type == q.get("type") && d.numero == q.get("numero")
         })[0];
         if (fiche != undefined) {
-            d3.select("#fiche").html("<h2>" + fiche.libelle + "</h2>" + marked.parse(fiche.texte));
+            d3.select("#fiche").html("<h2>" + fiche.libelle + "</h2>" + 
+                                     "<ul id='details'><li>Parcours : " + (Array.isArray(fiche.parcours) ? fiche.parcours.join(", ") : fiche.parcours) + 
+                                        "</li><li>Semestre : " + fiche.semestre + 
+                                        "</li><li>Numéro : " + fiche.numero_long +
+                                     "</li></ul>" +
+                                     marked.parse(fiche.texte));
         }
     }
 }
