@@ -1,5 +1,13 @@
 /*global d3,marked,URLSearchParams,location*/
 
+var test_fiche_demandée = function(d, q) {
+    var test_parcours = d.parcours.includes(q.get("parcours")),
+        test_semestre = q.get("semestre") == "tous" || q.get("semestre") == d.semestre,
+        test_type = d.type == q.get("type"),
+        test_numero = d.numero == q.get("numero");
+    return test_parcours && test_semestre && test_type && test_numero;
+}
+
 /* CHOIX DU PARCOURS : EMS par défaut */
 d3.select("#choix_parcours").selectAll("button")
     .data(["EMS", "VCOD"])
@@ -64,14 +72,14 @@ var creation = function(but) {
         .append("button")
         .classed("selected", function(d) {
             var q = new URLSearchParams(location.search);
-            return d.parcours.includes(q.get("parcours")) && q.get("semestre") == d.semestre && q.get("type") == d.type && q.get("numero") == d.numero;
+            return test_fiche_demandée(d, q);
         })
         .html(function(d) { return d.numero_long; })
     
     var q = new URLSearchParams(location.search);
     if (q.get("type") != null && q.get("numero") != null) {
         var fiche = but.filter(function(d) { 
-            return d.parcours.includes(q.get("parcours")) && q.get("semestre") == d.semestre && d.type == q.get("type") && d.numero == q.get("numero")
+            return test_fiche_demandée(d, q);
         })[0];
         if (fiche != undefined) {
             d3.select("#fiche").html("<h2>" + fiche.libelle + "</h2>" + 
