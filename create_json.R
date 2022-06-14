@@ -2,6 +2,14 @@ library(pdftools)
 
 text = pdf_text("PN-BUT-STID.pdf")
 
+f = function(text) {
+  # text = gsub("– ([a-zA-Z \']*)\n([a-zA-Z])", "– \\1_\n\n\\2_", text)
+  text = iconv(text, to = "UTF-8")
+  text = gsub("([:space:]*)– ([a-zéèàA-Z0-9 '’|,\\./]*)\n([A-Z])", "\\1- \\2\n\n\\3", text)
+  return (text)
+}
+text = sapply(text, f)
+
 # je vire les bas de pages
 text_split = unlist(strsplit(text, "\n"))
 
