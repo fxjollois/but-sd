@@ -1,0 +1,212 @@
+{
+  "Compétences": [
+    {
+      "Numero": 1,
+      "Parcours": [ "EMS", "VCOD" ],
+      "Titre": "Traiter des données à des fins décisionnelles",
+      "Raccourci": "Traiter",
+      "Composantes essentielles": [
+        { "Code": "CE1.01", "Libelle": "En intervenant à toutes les étapes du cycle de vie de la donnée (insertion, modification, extraction, suppression)" },
+        { "Code": "CE1.02", "Libelle": "En utilisant le modèle de données adapté aux besoins" },
+        { "Code": "CE1.03", "Libelle": "En s’inscrivant dans une démarche de documentation des réalisations adaptée au public visé" },
+        { "Code": "CE1.04", "Libelle": "En traduisant correctement les demandes métier en programmes, avec le respect du cahier des charges s'il existe" },
+        { "Code": "CE1.05", "Libelle": "En écrivant un programme correctement structuré et documenté, respectant les bonnes pratiques" },
+        { "Code": "CE1.06", "Libelle": "En identifiant les librairies et langages dédiés" }
+      ],
+      "Niveaux": [
+        {
+          "Libelle": "Traiter des données structurées",
+          "Apprentissages critiques": [
+            { "Code": "AC11.01", "Libelle": "Correctement interpréter et prendre en compte le besoin du commanditaire ou du clien" },
+            { "Code": "AC11.02", "Libelle": "Respecter les formalismes de notation" },
+            { "Code": "AC11.03", "Libelle": "Connaître la syntaxe des langages et savoir l’utiliser" },
+            { "Code": "AC11.04", "Libelle": "Mesurer l’importance de maîtriser la structure des données à exploiter" },
+            { "Code": "AC11.05", "Libelle": "Comprendre les structures algorithmiques de base et leur contexte d’usage" },
+            { "Code": "AC11.06", "Libelle": "Prendre conscience de l’intérêt de la programmation" }
+          ]
+        },
+        {
+          "Libelle": "Automatiser le traitement de données multidimensionnelles",
+          "Apprentissages critiques": [
+            { "Code": "AC21.01", "Libelle": "Comprendre l'organisation des données de l'entreprise" },
+            { "Code": "AC21.02", "Libelle": "Réaliser le rôle central et spécifique de l'entrepôt de données dans la chaine décisionnelle" },
+            { "Code": "AC21.03", "Libelle": "Identifier et résoudre les problèmes d’intégration de sources complémentaires et hétérogènes" },
+            { "Code": "AC21.04", "Libelle": "Comprendre la nécessité de tester, corriger et documenter un programme" },
+            { "Code": "AC21.05", "Libelle": "Apprécier l’intérêt de briques logicielles existantes et savoir les utiliser" }
+          ]
+        },
+        {
+          "Libelle": "Intégrer le traitement de données complexes",
+          "Apprentissages critiques": [
+            { "Code": "AC31.01", "Libelle": "Identifier les solutions technologiques permettant la collecte et la diffusion de données" },
+            { "Code": "AC31.02", "Libelle": "Comprendre les spécificités des données complexes et de leur exploitation" },
+            { "Code": "AC31.03", "Libelle": "Savoir mener une veille technologique" }
+          ]
+        }
+      ]
+    },
+    {
+      "Numero": 2,
+      "Parcours": [ "EMS", "VCOD" ],
+      "Titre": "Analyser statistiquement les données",
+      "Raccourci": "Analyser",
+      "Composantes essentielles": [
+        { "Code": "CE2.01", "Libelle": "En tenant compte du contexte de l’étude (économique, socio-démographique, commerciale, clinique...)" },
+        { "Code": "CE2.02", "Libelle": "En mettant en évidence les grandes tendances et les informations principales" },
+        { "Code": "CE2.03", "Libelle": "En identifiant et en mettant en œuvre les techniques adaptées aux attentes du client ou de l’instance décisionnaire" },
+        { "Code": "CE2.04", "Libelle": "En identifiant et en mettant en œuvre les techniques adaptées aux données complexes (données massives, données mal structurées, flux de données...)" },
+        { "Code": "CE2.05", "Libelle": "En tenant compte du contexte inférentiel (variabilité de l’échantillon)" }
+      ],
+      "Niveaux": [
+        {
+          "Libelle": "Mettre en œuvre une analyse descriptive",
+          "Apprentissages critiques": [
+            { "Code": "AC12.01", "Libelle": "Réaliser que les sources de données ont des caractéristiques propres à considérer (variation, précision, mise à jour...)" },
+            { "Code": "AC12.02", "Libelle": "Comprendre qu’une analyse correcte ne peut émaner que de données propres et préparées" },
+            { "Code": "AC12.03", "Libelle": "Comprendre l’intérêt des synthèses numériques et graphiques pour décrire une variable statistique" },
+            { "Code": "AC12.04", "Libelle": "Comprendre l’intérêt des synthèses numériques et graphiques pour mettre en évidence des liaisons entre variables" },
+            { "Code": "AC12.05", "Libelle": "Comprendre l'intérêt de l’utilisation d’un modèle probabiliste" },
+            { "Code": "AC12.06", "Libelle": "Appréhender la notion de fluctuation d'échantillonnage, notamment à l’aide de simulations probabilistes" }
+          ]
+        },
+        {
+          "Libelle": "Mettre en œuvre une analyse exploratoire",
+          "Apprentissages critiques": [
+            { "Code": "AC22.01", "Libelle": "Prendre conscience de la différence entre modélisation statistique et analyse exploratoire" },
+            { "Code": "AC22.02", "Libelle": "Saisir la spécificité de l’analyse des données temporelles" },
+            { "Code": "AC22.03", "Libelle": "Comprendre l’intérêt des analyses multivariées pour synthétiser et résumer l’information portée par plusieurs variables" },
+            { "Code": "AC22.04", "Libelle": "Appréhender l’idée de confronter une hypothèse avec la réalité pour prendre une décision" },
+            { "Code": "AC22.05", "Libelle": "Apprécier les limites de validité et les conditions d’application d’une analyse" }
+          ]
+        },
+        {
+          "Libelle": "Mettre en œuvre l'analyse exploratoire de données complexes",
+          "Apprentissages critiques": [
+            { "Code": "AC32.01", "Libelle": "Prendre conscience des différences entre des outils statistiques pour choisir le plus adapté" },
+            { "Code": "AC32.02", "Libelle": "Saisir l’importance de la mise en œuvre de méthodes adaptées à des domaines et des données spécifiques (Marketing, Biostatistique, Statistique spatiale, Gestion ...)" },
+            { "Code": "AC32.03", "Libelle": "Prendre conscience des limites des méthodes classiques pour l’analyse des données complexes (données massives, données mal structurées...)" },
+            { "Code": "AC32.04", "Libelle": "Comprendre les mécanismes de bases de l’intelligence artificielle (apprentissage statistique supervisé, échantillons d'apprentissage et échantillons de test...)" }
+          ]
+        }
+      ]
+    },
+    {
+      "Numero": 3,
+      "Parcours": [ "EMS", "VCOD" ],
+      "Titre": "Valoriser une production dans un contexte professionnel",
+      "Raccourci": "Valoriser",
+      "Composantes essentielles": [
+        { "Code": "CE3.01", "Libelle": "En s’adaptant au niveau d’expertise, à la culture et au statut du destinataire" },
+        { "Code": "CE3.02", "Libelle": "En s’exprimant correctement, aussi bien en français qu’en anglais, à l'oral comme à l'écrit" },
+        { "Code": "CE3.03", "Libelle": "En veillant aux aspects éthiques, déontologiques et réglementaires d’utilisation et de diffusion des données" },
+        { "Code": "CE3.04", "Libelle": "En interprétant et contextualisant les résultats (citations, vérification des sources, esprit critique)" },
+        { "Code": "CE3.05", "Libelle": "En utilisant la forme de restitution adaptée" },
+        { "Code": "CE3.06", "Libelle": "En tenant compte des réalités économiques et managériales des entreprises" }
+      ],
+      "Niveaux": [
+        {
+          "Libelle": "Contextualiser et présenter les données",
+          "Apprentissages critiques": [
+            { "Code": "AC13.01", "Libelle": "Prendre connaissance des biais rencontrés dans la mise en place d’une enquête" },
+            { "Code": "AC13.02", "Libelle": "Identifier l’importance de contextualiser ses données" },
+            { "Code": "AC13.03", "Libelle": "Mesurer l’importance de mettre en évidence des résultats clés par l’utilisation d’indicateurs pertinents" },
+            { "Code": "AC13.04", "Libelle": "Lors de la restitution des résultats, mesurer l’importance d’expliciter également la démarche suivie" },
+            { "Code": "AC13.05", "Libelle": "Comprendre les intérêts de la data visualisation et de l’infographie" },
+            { "Code": "AC13.06", "Libelle": "Mesurer l’importance d’une expression précise et nuancée dans la communication en français et dans une langue étrangère des résultats" }
+          ]
+        },
+        {
+          "Libelle": "Restituer et argumenter ses résultats",
+          "Apprentissages critiques": [
+            { "Code": "AC23.01", "Libelle": "Saisir l’intérêt de mobiliser de manière proactive des ressources métiers liées à l'environnement (y compris économique, international...)" },
+            { "Code": "AC23.02", "Libelle": "Savoir défendre ses choix d’analyses" },
+            { "Code": "AC23.03", "Libelle": "Saisir la nécessité de choisir des indicateurs pertinents pour communiquer sur les résultats" },
+            { "Code": "AC23.04", "Libelle": "Prendre conscience de la rigueur requise dans ses productions et dans la communication à leur propos" },
+            { "Code": "AC23.05", "Libelle": "Comprendre les enjeux des relations en milieu professionnel adaptées à l’interlocuteur et à sa culture" }
+          ]
+        },
+        {
+          "Libelle": "Intégrer et valoriser sa production dans l'écosystème de l'entreprise",
+          "Apprentissages critiques": [
+            { "Code": "AC33.01", "Libelle": "Savoir transformer la donnée pour la mettre en conformité avec des normes (anonymisation, normalisation)" },
+            { "Code": "AC33.02", "Libelle": "Mesurer l'impact d'un respect de la législation en terme de droit des données" },
+            { "Code": "AC33.03", "Libelle": "Identifier les clés d'une bonne communication (procédures et techniques utilisées)" },
+            { "Code": "AC33.04", "Libelle": "Mesurer l’importance de comprendre et de répondre à l'ensemble des problématiques posées" },
+            { "Code": "AC33.05", "Libelle": "Être force de proposition" },
+            { "Code": "AC33.06", "Libelle": "Prendre conscience de la nécessité d’intégrer la vision de l’interlocuteur (transversalité, international, multiculture, niveau d’expertise...)" }
+          ]
+        }
+      ]
+    },
+    {
+      "Numero": 4,
+      "Parcours": [ "EMS" ],
+      "Titre": "Modéliser les données dans un cadre statistique",
+      "Raccourci": "Modéliser",
+      "Composantes essentielles": [
+        { "Code": "CE4.01", "Libelle": "En choisissant le modèle adapté à la situation" },
+        { "Code": "CE4.02", "Libelle": "En maîtrisant la qualité du modèle" },
+        { "Code": "CE4.03", "Libelle": "En s’adaptant aux spécificités (données, enjeux, méthodes) d'un domaine d'application particulier (santé, marketing, assurance, qualité, socio-démographie...)" },
+        { "Code": "CE4.04", "Libelle": "En s'adaptant à la complexité des données (données massives, données mal structurées, flux de données...)" }
+      ],
+      "Niveaux": [
+        { },
+        {
+          "Libelle": "Mettre en œuvre un modèle statistique",
+          "Apprentissages critiques": [
+            { "Code": "AC24.01EMS", "Libelle": "Comprendre l'intérêt de planifier le recueil des données" },
+            { "Code": "AC24.02EMS", "Libelle": "Appréhender les difficultés et les limites rencontrées dans la mise en œuvre d'un terrain de collecte" },
+            { "Code": "AC24.03EMS", "Libelle": "Comprendre l'impact du type de données sur le choix de la modélisation à mettre en œuvre" },
+            { "Code": "AC24.04EMS", "Libelle": "Apprécier les limites de validité et les conditions d'application d'un modèle" },
+            { "Code": "AC24.05EMS", "Libelle": "Réaliser l'importance de la mise en œuvre d'une procédure de test statistique pour valider ou non une hypothèse" }
+          ]
+        },
+        {
+          "Libelle": "Réaliser l'ensemble de la démarche de modélisation",
+          "Apprentissages critiques": [
+            { "Code": "AC34.01EMS", "Libelle": "Comprendre l'intérêt des approches statistiques pour la fiabilisation, la validation, les incertitudes, les imprécisions des données" },
+            { "Code": "AC34.02EMS", "Libelle": "Comprendre l'intérêt de la problématique métier pour réaliser la modélisation" },
+            { "Code": "AC34.03EMS", "Libelle": "Viser la réalisation d'un processus de modélisation dans son ensemble" },
+            { "Code": "AC34.04EMS", "Libelle": "Prendre conscience des différences entre les modèles pour choisir le plus adapté" },
+            { "Code": "AC34.05EMS", "Libelle": "Prendre conscience de la nécessité d'utiliser des moyens spécifiques pour analyser les données massives ou les flux de données" }
+          ]
+        }
+      ]
+    },
+    {
+      "Numero": 4,
+      "Parcours": [ "VCOD" ],
+      "Titre": "Développer un outil décisionnel",
+      "Raccourci": "Développer",
+      "Composantes essentielles": [
+        { "Code": "CE4.01", "Libelle": "En mettant en œuvre une structuration des données adaptée à leurs caractéristiques (type, volume...)" },
+        { "Code": "CE4.02", "Libelle": "En assurant la qualité des données et minimisant les biais liés à l’incertitude et l’imprécision dans les sources" },
+        { "Code": "CE4.03", "Libelle": "En étant sensible aux aspects éthiques, déontologiques et juridiques d’utilisation et de diffusion des données" },
+        { "Code": "CE4.04", "Libelle": "En réalisant des solutions de visualisation spécifiques aux données métier" },
+        { "Code": "CE4.05", "Libelle": "En intervenant à différents niveaux de la chaîne décisionnelle" },
+        { "Code": "CE4.06", "Libelle": "En utilisant des méthodes de développement logiciel" }
+      ],
+      "Niveaux": [
+        { },
+        {
+          "Libelle": "Développer un composant d’une solution décisionnelle",
+          "Apprentissages critiques": [
+            { "Code": "AC24.01VCOD", "Libelle": "Comprendre le rôle fondamental de l’analyse des besoins et de l’existant dans un projet décisionnel (architecture, visualisation...)" },
+            { "Code": "AC24.02VCOD", "Libelle": "Percevoir les enjeux de l’automatisation et de l'interopérabilité d’un ensemble de tâches" },
+            { "Code": "AC24.03VCOD", "Libelle": "Prendre conscience des différences entre outils (logiciels, langages) pour choisir le plus adapté" },
+            { "Code": "AC24.04VCOD", "Libelle": "Comprendre le cycle de vie d’un projet informatique" }
+          ]
+        },
+        {
+          "Libelle": "Participer au déploiement d'une solution décisionnelle",
+          "Apprentissages critiques": [
+            { "Code": "AC34.01VCOD", "Libelle": "Prendre conscience de la nécessité d’utiliser des moyens spécifiques pour exploiter les Big Data ou les flux de données" },
+            { "Code": "AC34.02VCOD", "Libelle": "Défendre ses choix de solution par un argumentaire éclairé" },
+            { "Code": "AC34.03VCOD", "Libelle": "Réaliser l’intérêt d’appliquer les méthodes de développement dans la réalisation d’un projet informatique" },
+            { "Code": "AC34.04VCOD", "Libelle": "Apprécier l’intérêt de l’utilisation d’un gestionnaire de versions de code" }
+          ]
+        }
+      ]
+    }
+  ]
+}
