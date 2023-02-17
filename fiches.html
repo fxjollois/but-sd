@@ -1,10 +1,10 @@
 <!DOCTYPE>
 <html>
     <head>
-        <title>BUT Science des données</title>
+        <title>BUT Science des données | Compétences</title>
         <meta charset="utf-8">
         <script src="lib/d3.min.js"></script>
-        <link rel="stylesheet" href="index.css">
+        <script src="lib/marked.min.js"></script>
         <link rel="stylesheet" href="lib/bootstrap.min.css">
     </head>
     <body>
@@ -15,18 +15,25 @@
                     <span class="fs-4">BUT Science des données</span>
                 </a>
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#" class="nav-link active">Accueil</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
                     <li class="nav-item"><a href="competences.html" class="nav-link">Compétences</a></li>
-                    <li class="nav-item"><a href="fiches.html" class="nav-link">Fiches modules</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active">Fiches modules</a></li>
                 </ul>
             </header>
             
-            <div>
-                <h1>BUT Science des données (SD)</h1>
-                <p>Le BUT SD se décline en deux parcours, choisi à partir de la deuxième année, construit autour d'un tronc commun.</p>
-                <div class="row" id="parcours"></div>
-                <p class="text-secondary">Cliquer sur un des parcours pour avoir la structure (compétences et niveaux sur les 3 ans)</p>
-                <div id="archi"></div>
+            <div id="corps">
+                <h1>Fiches modules</h1>
+                <div id="choix_semestre"></div>
+                <p class="text-secondary">Sélectionner une fiche ci-dessous pour voir son contenu</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>SAE</h2><div id="liste_sae"></div>
+                        <h2>Ressources</h2><div id="liste_res"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <div id="fiche"></div>
+                    </div>
+                </div>
             </div>
             
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -37,8 +44,7 @@
                     <span class="mb-3 mb-md-0 text-muted">Lien vers le <a href="PN-BUT-STID.pdf" target="_blank">Programme National BUT STID (format PDF)</a> | Réalisé à l'aide de <a href="https://getbootstrap.com/" target="_blank">bootstrap</a>, <a href="https://d3js.org/" target="_blank">d3js</a> et <a href="https://marked.js.org/" target="_blank">markedjs</a></span>
                 </div>
             </footer>
-            
-            <script src="index.js"></script>
         </div>
+        <script src = "fiches.js"></script>
     </body>
 </html>

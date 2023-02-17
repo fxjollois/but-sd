@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<referentiel_competence specialite="SD"
+                        specialite_long="Science des données "
+                        type="B.U.T." annexe="23"
+                        type_structure="type1"
+                        type_departement="tertiaire"
+                        version="2022-12-01 16:14:21"
+>
+    <competences>
+                <competence nom_court="Traiter"
+                    numero="1"
+                    libelle_long="Traiter des données à des fins décisionnelles "
+                    couleur="c1"
+                    id="fddbf64f2b1e1e93765ba1476025fb16">
+            <situations>
+                                <situation>Dans le contexte du développement d&#039;un système d&#039;information décisionnel</situation>
+                                <situation>Dans le contexte de préparation des données à des fins d&#039;analyse statistique</situation>
+                            </situations>
+            <composantes_essentielles>
+                                <composante>En intervenant à toutes les étapes du cycle de vie de la donnée (insertion, modification, extraction, suppression)</composante>
+                                <composante>En utilisant le modèle de données adapté aux besoins</composante>
+                                <composante>En s’inscrivant dans une démarche de documentation des réalisations adaptée au public visé</composante>
+                                <composante>En traduisant correctement les demandes métier en programmes, avec le respect du cahier des charges s&#039;il existe</composante>
+                                <composante>En écrivant un programme correctement structuré et documenté, respectant les bonnes pratiques </composante>
+                                <composante>En identifiant les librairies et langages dédiés</composante>
+                            </composantes_essentielles>
+            <niveaux>
+                                <niveau ordre="1" libelle="Traiter des données structurées" annee="BUT1">
+                <acs>
+                                        <ac code="AC11.01">Correctement interpréter et prendre en compte le besoin du commanditaire ou du client</ac>
+                                        <ac code="AC11.02">Respecter les formalismes de notation</ac>
+                                        <ac code="AC11.03">Connaître la syntaxe des langages et savoir l’utiliser</ac>
+                                        <ac code="AC11.04">Mesurer l’importance de maîtriser la structure des données à exploiter</ac>
+                                        <ac code="AC11.05">Comprendre les structures algorithmiques de base et leur contexte d’usage</ac>
+                                        <ac code="AC11.06">Prendre conscience de l’intérêt de la programmation</ac>
+                                    </acs>
+                </niveau>
+                                <niveau ordre="2" libelle="Automatiser le traitement de données multidimensionnelles" annee="BUT2">
+                <acs>
+                                        <ac code="AC21.01">Comprendre l&#039;organisation des données de l&#039;entreprise</ac>
+                                        <ac code="AC21.02">Réaliser le rôle central et spécifique de l&#039;entrepôt de données dans la chaine décisionnelle</ac>
+                                        <ac code="AC21.03">Identifier et résoudre les problèmes d’intégration de sources complémentaires et hétérogènes</ac>
+                                        <ac code="AC21.04">Comprendre la nécessité de tester, corriger et documenter un programme</ac>
+                                        <ac code="AC21.05">Apprécier l’intérêt de briques logicielles existantes et savoir les utiliser</ac>
+                                    </acs>
+                </niveau>
+                                <niveau ordre="3" libelle="Intégrer le traitement de données complexes" annee="BUT3">
+                <acs>
+                                        <ac code="AC31.01">Identifier les solutions technologiques permettant la collecte et la diffusion de données </ac>
+                                        <ac code="AC31.02">Comprendre les spécificités des données complexes et de leur exploitation</ac>
+                                        <ac code="AC31.03">Savoir mener une veille technologique</ac>
+                                    </acs>
+                </niveau>
+                            </niveaux>
+        </competence>
+                <competence nom_court="Analyser"
+                    numero="2"
+                    libelle_long="Analyser statistiquement les données "
+                    couleur="c2"
+                    id="6cdfe8a53961726f6824cb93d46a6726">
+            <situations>
+                                <situation>Dans le contexte de programmation d&#039;un outil d&#039;aide à la décision</situation>
+                                <situation>Dans le contexte d&#039;un projet d&#039;étude statistique</situation>
+                            </situations>
+            <composantes_essentielles>
+                                <composante>En tenant compte du contexte de l’étude (économique, socio-démographique, commerciale, clinique...)</composante>
+                                <composante>En mettant en évidence les grandes tendances et les informations principales</composante>
+                                <composante>En identifiant et en mettant en œuvre les techniques adaptées aux attentes du client ou de l’instance décisionnaire</composante>
+                                <composante>En identifiant et en mettant en œuvre les techniques adaptées aux données complexes (données massives, données mal structurées, flux de données…)</composante>
+                                <composante>En tenant compte du contexte inférentiel (variabilité de l’échantillon)</composante>
+                            </composantes_essentielles>
+            <niveaux>
+                                <niveau ordre="1" libelle="Mettre en œuvre une analyse descriptive" annee="BUT1">
+                <acs>
+                                        <ac code="AC12.01">Réaliser que les sources de données ont des caractéristiques propres à considérer (variation, précision, mise à jour...)</ac>
+                                        <ac code="AC12.02">Comprendre qu’une analyse correcte ne peut émaner que de données propres et préparées</ac>
+                                        <ac code="AC12.03">Comprendre l’intérêt des synthèses numériques et graphiques pour décrire une variable statistique</ac>
+                                        <ac code="AC12.04">Comprendre l’intérêt des synthèses numériques et graphiques pour mettre en évidence des liaisons entre variables.</ac>
+                                        <ac code="AC12.05">Comprendre l&#039;intérêt de l’utilisation d’un modèle probabiliste</ac>
+                                        <ac code="AC12.06">Appréhender la notion de fluctuation d&#039;échantillonnage, notamment à l’aide de simulations probabilistes</ac>
+                                    </acs>
+                </niveau>
+                                <niveau ordre="2" libelle="Mettre en œuvre une analyse exploratoire" annee="BUT2">
+                <acs>
+                                        <ac code="AC22.01">Prendre conscience de la différence entre modélisation statistique et analyse exploratoire</ac>
+                                        <ac code="AC22.02">Saisir la spécificité de l’analyse des données temporelles</ac>
+                                        <ac code="AC22.03">Comprendre l’intérêt des analyses multivariées pour synthétiser et résumer l’information portée par plusieurs variables</ac>
+                                        <ac code="AC22.04">Appréhender l’idée de confronter une hypothèse avec la réalité pour prendre une décision</ac>
+                                        <ac code="AC22.05">Apprécier les limites de validité et les conditions d’application d’une analyse</ac>
+                                    </acs>
+                </niveau>
+                                <niveau ordre="3" libelle="Mettre en œuvre l&#039;analyse exploratoire de données complexes" annee="BUT3">
+                <acs>
+                                        <ac code="AC32.01">Prendre conscience des différences entre des outils statistiques pour choisir le plus adapté</ac>
+                                        <ac code="AC32.02">Saisir l’importance de la mise en œuvre de méthodes  adaptées à des domaines et des données spécifiques (Marketing, Biostatistique, Statistique spatiale, Gestion …)</ac>
+                                        <ac code="AC32.03">Prendre conscience des limites des méthodes classiques pour l’analyse des données complexes (données massives, données mal structurées…)</ac>
+                                        <ac code="AC32.04">Comprendre les mécanismes de bases de l’intelligence artificielle (apprentissage statistique supervisé, échantillons d&#039;apprentissage et échantillons de test…)</ac>
+                                    </acs>
+                </niveau>
+                            </niveaux>
+        </competence>
+                <competence nom_court="Valoriser"
+                    numero="3"
+                    libelle_long="Valoriser une production dans un contexte professionnel"
+                    couleur="c3"
+                    id="bfa93ca138c434e6b23c792d3938b936">
+            <situations>
+                                <situation>Dans le contexte du développement d&#039;outils décisionnels</situation>
+                                <situation>Dans le contexte d&#039;une étude statistique</situation>
+                            </situations>
+            <composantes_essentielles>
+                                <composante>En s’adaptant au niveau d’expertise, à la culture et au statut du destinataire</composante>
+                                <composante>En s’exprimant correctement, aussi bien en français qu’en anglais, à l&#039;oral comme à l&#039;écrit</composante>
+                                <composante>En veillant aux aspects éthiques, déontologiques et réglementaires d’utilisation et de diffusion des données</composante>
+                                <composante>En interprétant et contextualisant les résultats (citations, vérification des sources, esprit critique)</composante>
+                                <composante>En utilisant la forme de restitution adaptée</composante>
+                                <composante>En tenant compte des réalités économiques et managériales des entreprises</composante>
+                            </composantes_essentielles>
+            <niveaux>
+                                <niveau ordre="1" libelle="Contextualiser et présenter les données" annee="BUT1">
+                <acs>
+                                        <ac code="AC13.01">Prendre connaissance des biais rencontrés dans la mise en place d’une enquête</ac>
+                                        <ac code="AC13.02">Identifier l’importance de contextualiser ses données</ac>
+                                        <ac code="AC13.03">Mesurer l’importance de mettre en évidence des résultats clés par l’utilisation d’indicateurs pertinents</ac>
+                                        <ac code="AC13.04">Lors de la restitution des résultats, mesurer l’importance d’expliciter également la démarche suivie</ac>
+                                        <ac code="AC13.05">Comprendre les intérêts de la data visualisation et de l’infographie</ac>
+                                        <ac code="AC13.06">Mesurer l’importance d’une expression précise et nuancée dans la communication en français et dans une langue étrangère des résultats</ac>
+                                    </acs>
+                </niveau>
+                                <niveau ordre="2" libelle="Restituer et argumenter ses résultats" annee="BUT2">
+                <acs>
+                                        <ac code="AC23.01">Saisir l’intérêt de mobiliser de manière proactive des ressources métiers liées à l&#039;environnement (y compris économique, international…)</ac>
+                                        <ac code="AC23.02">Savoir défendre ses choix d’analyses</ac>
+                                        <ac code="AC23.03">Saisir la nécessité de choisir des indicateurs pertinents pour communiquer sur les résultats</ac>
+                                        <ac code="AC23.04">Prendre conscience de la rigueur requise dans ses productions et dans la communication à leur propos</ac>
+                                        <ac code="AC23.05">Comprendre les enjeux des relations en milieu professionnel adaptées à l’interlocuteur et à sa culture</ac>
+                                    </acs>
+                </niveau>
+                                <niveau ordre="3" libelle="Intégrer et valoriser sa production dans l&#039;écosystème de l&#039;entreprise" annee="BUT3">
+                <acs>
+                                        <ac code="AC33.01">Savoir transformer la donnée pour la mettre en conformité avec des normes (anonymisation, normalisation)</ac>
+                                        <ac code="AC33.02">Mesurer l&#039;impact d&#039;un respect de la législation en terme de droit des données.</ac>
+                                        <ac code="AC33.03">Identifier les clés d&#039;une bonne communication (procédures et techniques utilisées)</ac>
+                                        <ac code="AC33.04">Mesurer l’importance de comprendre et de répondre à l&#039;ensemble des problématiques posées</ac>
+                                        <ac code="AC33.05">Être force de proposition</ac>
+                                        <ac code="AC33.06">Prendre conscience de la nécessité d’intégrer la vision de l’interlocuteur (transversalité, international, multiculture, niveau d’expertise…)</ac>
+                                    </acs>
+                </niveau>
+                            </niveaux>
+        </competence>
+                <competence nom_court="Développer"
+                    numero="4"
+                    libelle_long="Développer un outil décisionnel"
+                    couleur="c4"
+                    id="e84093146911c42659b5dec7bf24e7a4">
+            <situations>
+                                <situation>Dans le contexte du déploiement d&#039;une solution décisionnelle</situation>
+                                <situation>Dans le contexte d&#039;automatisation de reporting et de visualisation</situation>
+                            </situations>
+            <composantes_essentielles>
+                                <composante>En mettant en œuvre une structuration des données adaptée à leurs caractéristiques (type, volume...)</composante>
+                                <composante>En assurant la qualité des données et minimisant les biais liés à l’incertitude et l’imprécision dans les sources</composante>
+                                <composante>En étant sensible aux aspects éthiques, déontologiques et juridiques d’utilisation et de diffusion des données</composante>
+                                <composante>En réalisant des solutions de visualisation spécifiques aux données métier</composante>
+                                <composante>En intervenant à différents niveaux de la chaîne décisionnelle</composante>
+                                <composante>En utilisant des méthodes de développement logiciel</composante>
+                            </composantes_essentielles>
+            <niveaux>
+                                <niveau ordre="1" libelle="Développer un composant d’une solution décisionnelle" annee="BUT2">
+                <acs>
+                                        <ac code="AC24.01VCOD">Comprendre le rôle fondamental de l’analyse des besoins et de l’existant dans un projet décisionnel (architecture, visualisation...)</ac>
+                                        <ac code="AC24.02VCOD">Percevoir les enjeux de l’automatisation et de l&#039;interopérabilité d’un ensemble de tâches </ac>
+                                        <ac code="AC24.03VCOD">Prendre conscience des différences entre outils (logiciels, langages) pour choisir le plus adapté</ac>
+                                        <ac code="AC24.04VCOD">Comprendre le cycle de vie d’un projet informatique</ac>
+                                    </acs>
+                </niveau>
+                                <niveau ordre="2" libelle="Participer au déploiement d&#039;une solution décisionnelle" annee="BUT3">
+                <acs>
+                                        <ac code="AC34.01VCOD">Prendre conscience de la nécessité d’utiliser des moyens spécifiques pour exploiter les Big Data ou les flux de données</ac>
+                                        <ac code="AC34.02VCOD">Défendre ses choix de solution par un argumentaire éclairé</ac>
+                                        <ac code="AC34.03VCOD">Réaliser l’intérêt d’appliquer les méthodes de développement dans la réalisation d’un projet informatique</ac>
+                                        <ac code="AC34.04VCOD">Apprécier l’intérêt de l’utilisation d’un gestionnaire de versions de code</ac>
+                                    </acs>
+                </niveau>
+                            </niveaux>
+        </competence>
+                <competence nom_court="Modéliser"
+                    numero="4"
+                    libelle_long="Modéliser les données dans un cadre statistique"
+                    couleur="c4"
+                    id="9a83300b795cd0bd43ce236c149b486e">
+            <situations>
+                                <situation>Dans le contexte d’une analyse statistique</situation>
+                                <situation>Dans le contexte d&#039;un développement statistique</situation>
+                            </situations>
+            <composantes_essentielles>
+                                <composante>En choisissant le modèle adapté à la situation</composante>
+                                <composante>En maîtrisant la qualité du modèle</composante>
+                                <composante>En s’adaptant aux spécificités (données, enjeux, méthodes) d&#039;un domaine d&#039;application particulier (santé, marketing, assurance, qualité, socio-démographie...)</composante>
+                                <composante>En s&#039;adaptant à la complexité des données (données massives, données mal structurées, flux de données…)</composante>
+                            </composantes_essentielles>
+            <niveaux>
+                                <niveau ordre="1" libelle="Mettre en œuvre un modèle statistique" annee="BUT2">
+                <acs>
+                                        <ac code="AC24.01EMS">Comprendre l&#039;intérêt de planifier le recueil des données</ac>
+                                        <ac code="AC24.02EMS">Appréhender les difficultés et les limites rencontrées dans la mise en œuvre d&#039;un terrain de collecte</ac>
+                                        <ac code="AC24.03EMS">Comprendre l&#039;impact du type de données sur le choix de la modélisation à mettre en œuvre</ac>
+                                        <ac code="AC24.04EMS">Apprécier les limites de validité et les conditions d&#039;application d&#039;un modèle</ac>
+                                        <ac code="AC24.05EMS">Réaliser l&#039;importance de la mise en œuvre d&#039;une procédure de test statistique pour valider ou non une hypothèse</ac>
+                                    </acs>
+                </niveau>
+                                <niveau ordre="2" libelle="Réaliser l&#039;ensemble de la démarche de modélisation" annee="BUT3">
+                <acs>
+                                        <ac code="AC34.01EMS">Comprendre l&#039;intérêt des approches statistiques pour la fiabilisation, la validation, les incertitudes, les imprécisions des données</ac>
+                                        <ac code="AC34.02EMS">Comprendre l&#039;intérêt de la problématique métier pour réaliser la modélisation</ac>
+                                        <ac code="AC34.03EMS">Viser la réalisation d&#039;un processus de modélisation dans son ensemble</ac>
+                                        <ac code="AC34.04EMS">Prendre conscience des différences entre les modèles pour choisir le plus adapté</ac>
+                                        <ac code="AC34.05EMS">Prendre conscience de la nécessité d&#039;utiliser des moyens spécifiques pour analyser les données massives ou les flux de données</ac>
+                                    </acs>
+                </niveau>
+                            </niveaux>
+        </competence>
+            </competences>
+    <parcours>
+                <parcour numero="0" libelle="Visualisation, conception d&#039;outils décisionnels" code="VCOD">
+                        <annee ordre="1">
+                                <competence niveau="1" id="fddbf64f2b1e1e93765ba1476025fb16"/>
+                                <competence niveau="1" id="6cdfe8a53961726f6824cb93d46a6726"/>
+                                <competence niveau="1" id="bfa93ca138c434e6b23c792d3938b936"/>
+                            </annee>
+                        <annee ordre="2">
+                                <competence niveau="2" id="fddbf64f2b1e1e93765ba1476025fb16"/>
+                                <competence niveau="2" id="6cdfe8a53961726f6824cb93d46a6726"/>
+                                <competence niveau="2" id="bfa93ca138c434e6b23c792d3938b936"/>
+                                <competence niveau="1" id="e84093146911c42659b5dec7bf24e7a4"/>
+                            </annee>
+                        <annee ordre="3">
+                                <competence niveau="3" id="fddbf64f2b1e1e93765ba1476025fb16"/>
+                                <competence niveau="3" id="6cdfe8a53961726f6824cb93d46a6726"/>
+                                <competence niveau="3" id="bfa93ca138c434e6b23c792d3938b936"/>
+                                <competence niveau="2" id="e84093146911c42659b5dec7bf24e7a4"/>
+                            </annee>
+                    </parcour>
+                <parcour numero="0" libelle="Exploration et modélisation statistique" code="EMS">
+                        <annee ordre="1">
+                                <competence niveau="1" id="fddbf64f2b1e1e93765ba1476025fb16"/>
+                                <competence niveau="1" id="6cdfe8a53961726f6824cb93d46a6726"/>
+                                <competence niveau="1" id="bfa93ca138c434e6b23c792d3938b936"/>
+                            </annee>
+                        <annee ordre="2">
+                                <competence niveau="2" id="fddbf64f2b1e1e93765ba1476025fb16"/>
+                                <competence niveau="2" id="6cdfe8a53961726f6824cb93d46a6726"/>
+                                <competence niveau="2" id="bfa93ca138c434e6b23c792d3938b936"/>
+                                <competence niveau="1" id="9a83300b795cd0bd43ce236c149b486e"/>
+                            </annee>
+                        <annee ordre="3">
+                                <competence niveau="3" id="fddbf64f2b1e1e93765ba1476025fb16"/>
+                                <competence niveau="3" id="6cdfe8a53961726f6824cb93d46a6726"/>
+                                <competence niveau="3" id="bfa93ca138c434e6b23c792d3938b936"/>
+                                <competence niveau="2" id="9a83300b795cd0bd43ce236c149b486e"/>
+                            </annee>
+                    </parcour>
+            </parcours>
+</referentiel_competence>

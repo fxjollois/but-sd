@@ -1,0 +1,11 @@
+.competence, .niveau {
+    text-align: center;
+    min-height: 100px;
+    border-radius: 6px;
+    padding: 20px; 
+    margin: 5px;
+}
+
+.niveau {
+    border: solid 1px black;
+}
