@@ -189,7 +189,7 @@ affiche_RES = function(arguments) {
             .html(info.competences.competence["@nom"]);
     }
     fiche.append("h4").html("Description");
-    fiche.append("p").html(marked.parse(info.description));
+    fiche.append("p").html(marked.parse(info.description.replace("Contenu :", "Contenu :\n")));
     fiche.append("h4").html("Apprentissages critiques");
     fiche.append("ul").selectAll("li")
         .data(acs.filter(d => info.acs.ac.includes(d["@code"])))
