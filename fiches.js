@@ -41,8 +41,9 @@ function remplir_res (res) {
 
 function affiche_SAE (args, acs, res) {
     'use strict';
+    
     var liste_sae = d3.select("#liste_sae").selectAll("li"),
-        info = liste_sae.data().filter((e) => e["code_"] == args.SAE)[0],
+        info = liste_sae.data().filter((e) => e["codeSAE"] == args.SAE)[0],
         fiche = d3.select("#fiche"),
         url = lien(info);
     
@@ -80,6 +81,7 @@ function affiche_SAE (args, acs, res) {
 
 function affiche_RES (args, acs, sae) {
     'use strict';
+    
     var liste_res = d3.select("#liste_res").selectAll("li"),
         info = liste_res.filter((e) => e["@code"] == args.ressource).data()[0],
         fiche = d3.select("#fiche"), 
@@ -121,12 +123,13 @@ function affiche_RES (args, acs, sae) {
 
 d3.json("pn.json").then(function(data){
     'use strict';
+        
     var pn = data,
         acs = pn.referentiel_competence.competences.competence.map((d) => d.niveaux.niveau.map((e) => e.acs.ac.flat()).flat()).flat(),
         sae = pn.referentiel_formation.semestre.map((d) => d.saes.sae.flat()).map((e, i) => e.map((d) => {d.semestre = (i+1); return d; })).flat()
             .map((e) => {e.codeSAE = e["@code"].replace("É", "E").replace(" ", ""); return e}),
         res = pn.referentiel_formation.semestre.map((d) => d.ressources.ressource.flat()).map((e, i) => e.map((d) => {d.semestre = (i+1); return d; })).flat(),
-        parametres = {semestre: 1, ressource: undefined, sae: undefined},
+        parametres = {semestre: 1, ressource: undefined, SAE: undefined},
         args = location.search.replace('\?','').split('&').map((e) => e.split('='));
     
     if (location.search.search("semestre") >= 0)
@@ -137,7 +140,7 @@ d3.json("pn.json").then(function(data){
 
     if (location.search.search("SAE") >= 0)
         parametres.SAE = args.filter((d) => d[0] == "SAE")[0][1];
-        
+    
     d3.select("#choix_semestre").selectAll("a")
         .data(data.referentiel_formation.semestre)
         .enter()
@@ -147,10 +150,11 @@ d3.json("pn.json").then(function(data){
         .append("button")
         .attr("class", (d,i) => "btn btn-lg" + (i == (parametres.semestre-1) ? " btn-primary" : " btn-outline-primary"))
         .html((d) => d["@libelle"]);
-    
+
     remplir_sae(data.referentiel_formation.semestre[parametres.semestre-1].saes.sae);
     remplir_res(data.referentiel_formation.semestre[parametres.semestre-1].ressources.ressource);
     
-    if (arguments.SAE) affiche_SAE(parametres, acs, res);
-    if (arguments.ressource) affiche_RES(parametres, acs, sae);
+    if (parametres.SAE !== undefined) affiche_SAE(parametres, acs, res);
+    if (parametres.ressource !== undefined) affiche_RES(parametres, acs, sae);
+    
 });
